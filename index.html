@@ -1,0 +1,436 @@
+<!DOCTYPE html> <!--Espacifica que es HTML-->
+<html lang="es"> <!--Esto indica que la pagina es en español --> <!--Lang es para decir en que isioma esta el codigo-->
+    <head>
+        <meta charset="UTF-8"> <!--Esto es los catacteres del lenguaje-->
+        <meta name="viewport" content="width=device-with, initial-scale=1.0"> <!---->
+        <title>Bitacora</title> <!--Esto es el titulo de la lengueta de la pagina-->
+        <link href="img/Logo alta fidelidad.ico" rel="icon"></link>
+        <link rel="stylesheet" herf="style.css">
+        <style>
+            h1{
+                font-size: medium;
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: aqua;
+            }
+
+            header{
+                width: 1890px;
+                height: 250px;
+                background-color: #54414E;
+            }
+        
+            section{
+                width: 1890px;
+                height: 600px;
+                background-color: #875C74;
+            }
+            .hermano{
+                width: 1890px;
+                height: 45px;
+                background-color: #A38295;
+            }
+            footer{
+                width: 1890px;
+                height: 150px;
+                background-color: #A790A5;
+            }
+            ul{
+                list-style: none;
+            }
+            .cuadrado{
+                width: 500px;
+                height: 300px;
+                background: linear-gradient(45deg, darkblue 40%, blue 80%);
+                margin-left:auto;
+                margin-right: auto;
+                color: aqua;
+                display: block;
+                padding: 20px;
+                border: 13px inset darkblue;
+            }
+            
+            .txtcolor{
+                color: purple;
+            }
+            .arriba{
+                width: 190px;
+                height: 108px;
+                background-color: cyan;
+                position: absolute;
+                top:0;
+                left:0;
+                z-index: -1; /*capa -1 se va hasta abajo*/
+            }
+            .abajo{
+                width: 100px;
+                height: 108px;
+                background-color:blue ;
+                position: absolute;
+            }
+            .pirill{
+                width: 100px;
+                height: 80px;
+                background-color: #54414E;
+                animation: mover 2s infinite;
+            }
+            @keyframes mover{
+                0% {transform:translateX(0);}
+                50% {transform:translateX(100px);}
+                100% {transform:translateX(0);}
+                
+            }
+            .slideshow{
+                overflow: hidden;
+                height: 100px;
+                width: 80px;
+            }
+            .slide-wrapper{
+                width: 510px;
+                animation: slide 18s ease infinite;
+            }
+            .slide{
+                float: left;
+                height: 510px;
+                width: 728px;
+            }
+
+            .contenedor {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 250px;
+                background-color: rgb(204, 104, 104);
+            }
+            
+            .caja {
+                background-color: red;
+                padding: 20px;
+                border: 1px solid red;
+                transition: all 0.3s ease;
+            }
+            
+            .caja:hover {
+                background-color: #ff0000;
+                color: red;
+                transform: scale(1.1);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .bro{
+                display: inline-block;
+
+
+            }
+            .btn{
+                background-color: #ff0000;
+                color:#54414E;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            .btn:hover{
+                background-color: #A790A5;
+            }
+            #slideshow {
+  text-align: center;
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin-bottom: 400px;
+}
+ 
+.slide-wrapper {
+  width: 2912px;
+  animation: slide 4s ease infinite;
+}
+ 
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+ 
+.slide:nth-child(1) { /*Elementos de una etiqueta que estan dentro*/
+  background-color: red;
+}
+ 
+.slide:nth-child(2) {
+  background-color: orangered;
+}
+ 
+.slide:nth-child(3) {
+  background-color: yellow;
+}
+ 
+.slide:nth-child(4) {
+  background-color: greenyellow;
+}
+ 
+@keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+
+    .resaltado {
+    color: black;
+    transition: color 0.3s ease;
+  }
+
+  .resaltado:hover {
+    color: rgb(0, 174, 255);
+  }
+
+
+    p {
+        color: rgb(255, 0, 0); /* Asegúrate de que el texto sea visible */
+        font-size: 16px;
+    }
+
+    .resaltado {
+        color: rgb(15, 128, 0); /* Para que la palabra resaltada sea claramente visible */
+    }
+
+      a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+  
+      /* Ejemplo :focus */
+      input:focus {
+        background-color: lightyellow;
+      }
+  
+      /* Ejemplo :active */
+      button:active {
+        background-color: blue;
+        color: white;
+      }
+  
+      /* Ejemplo :nth-child */
+      ul li:nth-child(odd) {
+        background-color:#875C74;
+      }
+      
+      ul li:nth-child(even) {
+        background-color:#A790A5;
+      }
+  
+      /* Ejemplo :first-child y :last-child */
+      ul li:first-child {
+        font-weight: bold;
+      }
+  
+      ul li:last-child {
+        color: red;
+      }
+  
+      /* Ejemplo :not() */
+      p:not(.importante) {
+        color: rgb(255, 0, 179);
+      }
+  
+      /* Ejemplo :checked */
+      input:checked {
+        background-color: lightgreen;
+      }
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:active {
+  background-color: #2e7d32; 
+  transform: scale(0.98); 
+}
+.parallax{
+    background-image: url(https://static.wikia.nocookie.net/undertale/images/5/55/Asgore_Dreemurr.gif/revision/latest?cb=20151122174306&path-prefix=es);
+    height: 500px;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <center><div class="menu">
+            <h3><a href="index.html">Inicio</a>
+            <a href="Datos rgb.html">Datos RGB</a></h3>
+        </div></center>
+        <header>
+            <center>
+                <h1 style="color:purple;">Bitacora de Alexia MIchelle Minjares Granados</h1> 
+                <a href="#portada">Ir abajo</a>
+            </center></h1>
+        </header>
+        <section>
+            <p> Bitacora de la clase de Introduccion a HTML Y CSS</p>
+            <iframe width="360" height="200" src="https://www.youtube.com/embed/Zcjy1ynQ1tQ?si=9CZ08zsI_kleFzqO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--Video directo de youtube-->
+        </section>
+        <article></article>
+        <div class="cuadrado">
+            <p class="color">
+                <br><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum<br/><br/><br/>
+            </p>
+        </div>
+        <div class="abajo"></div>
+        <div class="arriba"></div>
+
+        <div id="portada"></div>
+        
+        <div class="hermano" id="portada">      
+            <img src="img/Portada UT.jpg" width="360" height="200"> <!--Imagen desde la memoria-->
+            <a href="https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fundertale-fanart-by-me-hope-you-like-it-v0-8b94p4dk1n5d1.png%3Fauto%3Dwebp%26s%3D97ae1f7597defde51548bb83bc4dcf8cd83cbe91"> Haz click aqui </a><!--Enlace para acceder a imagen directa-->
+       </div>
+        <div class="hermano" id="portadatos"></div>
+        <div class="hermano" id="papa"></div>
+        <div class="hermano" id="papa"></div>
+        <div class="hermano" id="papa"></div>
+
+        <div class="pirill">
+            <h1>animacion</h1>
+        </div>
+        <div class="slideshow"></div>
+
+        <div class="caja"></div>
+
+        <div class="contenedor"></div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Ciudad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana</td>
+                    <td>30</td>
+                    <td>Buenos Aires</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Pedro</td>
+                    <td>20</td>
+                    <td>Lima</td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="/actionPage,php"> <!---->
+            <label for="">Nombres:</label>
+            <input type="text" id="name" name="nombre" placeholder="Tu nombre...">
+            <label> Pais:</label>
+            <select id="pais" name="pais">
+                <option value="australia">Australia</option>
+                <option value="mexico">Mexico</option>
+                <option value="japon">Japon</option>
+                <option value="brasil">Brasil</option>
+                <option value="corea">Corea</option>
+            </select>
+
+        </form>
+
+ 
+    <p>Este es un texto normal, pero al pasar el mouse sobre la <span class="resaltado">palabra resaltada</span>, cambia de color.</p>
+    <p> y asi es como se usa la funcion de span y span:hover</p>
+ 
+    <div id="slideshow">
+        <div class="slide-wrapper">
+            <div class="slide">
+                <h1 class="slide-number">1</h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">2</h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">3</h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">4</h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">5</h1>
+            </div>
+        </div>
+    </div>
+
+        <p>Undertale es un videojuego 2D creado por <span class="resaltado">Toby Fox</span>, en septiembre del 2015.</p>
+
+    
+    <h2>:hover</h2>
+    <a href="#">Este es un enlace</a>
+  
+    <h2>:focus</h2>
+    <input type="text" placeholder="Escribe algo...">
+  
+    <h2>:active</h2>
+        <button>Hola mundo</button>
+        <button>Hola mundo</button>
+        <button>Hola mundo</button>
+  
+    <h2>:nth-child</h2>
+    <ul>
+      <li>Numero 1</li>
+      <li>Numero 2</li>
+      <li>Numero 3</li>
+      <li>Numero 4</li>
+      <li>Numero 5</li>
+    </ul>
+  
+    <!--<h2>:first-child y :last-child</h2>
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ul>-->
+  
+    <h2>:not()</h2>
+    <p class="importante">Principal</p>
+    <p>Secundario</p>
+  
+    <h2>:checked</h2>
+    <input type="checkbox" id="check"> Acepto los términos
+    <br></br>
+    <br></br>
+
+    <select>
+        <option value="opcion1">Ruinas</option>
+        <option value="opcion2">Snowdin</option>
+        <option value="opcion3">Waterfall</option>
+        <option value="opcion4">Hotland</option>
+    </select>
+
+    <div class="parallax"></div>
+
+    
+        
+    </body>
+    <footer>
+        <!-- <ul> lista con puntos-->
+        </ul> <!--Lista nuerica-->
+        <ol start="1">
+            <li>Sans</li>
+            <li>Papyrus</li>
+            <li>Grillby</li>
+        </ol>
+
+    </footer>
+</html>

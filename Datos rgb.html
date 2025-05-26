@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+        .hex {
+            background-color: #3592d0;
+            color: white;
+        }
+ 
+        .keyword {
+            background-color: red;
+            color: black;
+        }
+ 
+        .rgb {
+            /*Define los niveles de Rojo, Verde y Azul*/
+            background-color: rgb(46, 204, 113);
+            color: white;
+        }
+ 
+        .rgba {
+            background-color: rgba(231, 77, 60, 0.662);
+            color: white;
+        }
+ 
+        .hsl {
+            /*Se basa en el círculo cromatico
+        h = Hue (tono, 0–360°, como un ángulo en el círculo de color)
+        s = Saturation (saturación, 0%–100%)
+        l = Lightness (luminosidad, 0%–100%)
+        */
+            background-color: hsl(200, 64%, 51%);
+            color: white;
+        }
+ 
+        .hsla {
+            background-color: hsla(300, 100%, 50%, 0.604);
+            color: white;
+        }
+ 
+        div {
+            padding: 10px;
+            margin: 5px;
+            font-family: sans-serif;
+        }
+ 
+ 
+        .parallax {
+            /* The image used */
+            background-image: url("https://i.blogs.es/1da08b/1366_2000-9-/1366_2000.jpeg");
+ 
+            /* Set a specific height */
+            height: 500px;
+ 
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+ 
+<body>
+    <center><div class="menu">
+        <h3><a href="index.html">Inicio</a>
+        <a href="Datos rgb.html">Datos RGB</a></h3>
+    </div></center>
+ 
+    <div class="hex">Color en Hexadecimal</div>
+    <div class="keyword">Color con Palabra Clave</div>
+    <div class="rgb">Color en RGB</div>
+    <div class="rgba">Color en RGBA (con transparencia)</div>
+    <div class="hsl">Color en HSL</div>
+    <div class="hsla">Color en HSLA (con transparencia)</div>
+ 
+ 
+    <div class="parallax"></div>
+ 
+    <div style="height:1000px;background-color:red;font-size:36px">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+    </div>
+</body>
+ 
+</html>
